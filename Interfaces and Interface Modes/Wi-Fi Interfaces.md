@@ -226,31 +226,6 @@ Kairos@htb[/htb]$ iwlist wlan0 scan |  grep 'Cell\|Quality\|ESSID\|IEEE'
 ```
 
 From the refined output of the `iwlist` command, we can identify that there are three available WiFi networks. This filtered information focuses on the critical details such as the network cells, signal quality, ESSID, and IEEE specifications, making it straightforward to analyze the available networks.
-
-## Scanning Available WiFi Networks
-
-To efficiently scan for available WiFi networks, we can use the `iwlist` command along with the specific interface name. Given the potentially extensive output of this command, it is beneficial to filter the results to show only the most relevant information. This can be achieved by piping the output through grep to include only lines containing `Cell`, `Quality`, `ESSID`, or `IEEE`.
-
-```shell
-Kairos@htb[/htb]$ iwlist wlan0 scan |  grep 'Cell\|Quality\|ESSID\|IEEE'
-
-          Cell 01 - Address: f0:28:c8:d9:9c:6e
-                    Quality=61/70  Signal level=-49 dBm  
-                    ESSID:"HTB-Wireless"
-                    IE: IEEE 802.11i/WPA2 Version 1
-          Cell 02 - Address: 3a:c4:6e:40:09:76
-                    Quality=70/70  Signal level=-30 dBm  
-                    ESSID:"CyberCorp"
-                    IE: IEEE 802.11i/WPA2 Version 1
-          Cell 03 - Address: 48:32:c7:a0:aa:6d
-                    Quality=70/70  Signal level=-30 dBm  
-                    ESSID:"HackTheBox"
-                    IE: IEEE 802.11i/WPA2 Version 1
-```
-
-From the refined output of the `iwlist` command, we can identify that there are three available WiFi networks. This filtered information focuses on the critical details such as the network cells, signal quality, ESSID, and IEEE specifications, making it straightforward to analyze the available networks.
-
----
 ## Changing Channel & Frequency of Interface
 
 We can use the following command to see all available channels for the wireless interface:
