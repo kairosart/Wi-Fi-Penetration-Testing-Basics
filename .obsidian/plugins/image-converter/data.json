@@ -13,11 +13,12 @@
       "name": "Same folder as current note"
     },
     {
-      "name": "Images",
-      "type": "SUBFOLDER"
+      "name": "Image",
+      "type": "CUSTOM",
+      "customTemplate": "/images/"
     }
   ],
-  "selectedFolderPreset": "Default (Obsidian setting)",
+  "selectedFolderPreset": "Image",
   "filenamePresets": [
     {
       "name": "Keep original name",
@@ -357,7 +358,7 @@
   "captionMarginTop": "4px",
   "captionAlignment": "center",
   "modalSessionState": {
-    "customFolderOverride": "",
+    "customFolderOverride": "/images/",
     "customFilenameOverride": ""
   }
 }

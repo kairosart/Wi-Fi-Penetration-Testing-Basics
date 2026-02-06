@@ -301,3 +301,27 @@ In this section, we explored how to choose the right interface, change the regio
 
 In the next section, we will delve into the different modes of a wireless interface. We will examine how each mode operates and its specific applications. Understanding these modes will help us utilize wireless interfaces more effectively for diverse purposes, whether it be for routine connectivity, network troubleshooting, or specialized tasks.
 
+
+
+---
+## Questions
+
+1. Check the driver capabilities for the interface. How many software interface modes are available? (Answer in digit format: e.g., 3).
+	Answer: *2*
+
+```bash
+iw list	
+```
+
+![[iw_list.png]]
+
+2. Follow the steps shown in the section to scan for available WiFi networks. What is the *ESSID* name of the 3rd WiFi Network (Cell 03)?
+	Answer: *HackTheBox-5G*
+
+```bash
+iwlist wlan0 scan |  grep "ESSID"
+```
+
+![[iwlist_scan.png]]
+
+**Next step:** [[Interface Modes]]
