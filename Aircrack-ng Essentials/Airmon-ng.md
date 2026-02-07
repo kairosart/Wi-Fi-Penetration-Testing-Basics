@@ -105,3 +105,5 @@ sudo airmon-ng start wlan0
 ```
 
 ![[airmon-ng_check_driver.png]]
+
+**Next step:** [[Airodump-ng]]

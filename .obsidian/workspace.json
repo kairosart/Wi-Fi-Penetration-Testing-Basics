@@ -43,17 +43,17 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Aircrack-ng Essentials/Airodump-ng.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Airodump-ng"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +110,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "7a605ebd7d88e884",
@@ -155,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Aircrack-ng Essentials/Airmon-ng.md",
+                "file": "Aircrack-ng Essentials/Airodump-ng.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Airmon-ng"
+              "title": "Outline of Airodump-ng"
             }
           },
           {
@@ -347,8 +348,16 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "b970ba3d110f8b09",
+  "active": "7076139e1b6d8e47",
   "lastOpenFiles": [
+    "images/airodump-ng6.png",
+    "images/airodump-ng5.png",
+    "images/airodump-ng4.png",
+    "images/airodump-ng3.png",
+    "images/airodump-ng2.png",
+    "images/airodump-ng1.png",
+    "Aircrack-ng Essentials/Airmon-ng.md",
+    "Aircrack-ng Essentials/Airodump-ng.md",
     "index.md",
     "images/rose-gold-glitter-frame-pink-festive_53876-111738.png",
     "images/rose-gold-glitter-frame-pink-festive_53876-111738/rose-gold-glitter-frame-pink-festive_53876-111738.png",
@@ -363,15 +372,9 @@
     "home/emi",
     "home",
     "802.11 Fundamentals/802.11 Frames and TypesUntitled.md",
-    "Aircrack-ng Essentials/Airmon-ng.md",
     "images/Wi_Fi_Penetration_Testing_Basics_Module_Cheat_Sheet.pdf",
     "images/airmon-ng_check_driver.png",
     "images/airmon-ng_question1.png",
-    "images/airmon-ng1.png",
-    "images/airmon-ng_stop.png",
-    "images/airmon-ng_channel.png",
-    "images/airmon-neg_kill.png",
-    "images/airmon-ng_check.png",
     "Aircrack-ng Essentials/Introduction to Aircrack-ng.md",
     "Interfaces and Interface Modes/Interface Modes.md",
     "Interfaces and Interface Modes/Wi-Fi Interfaces.md",
@@ -393,7 +396,6 @@
     "EXPLOITATION/Detect common misconfigurations on NFS servers.md",
     "EXPLOITATION/Creating a tunnel.md",
     "EXPLOITATION/Create a new tunnel (Entry point).md",
-    "EXPLOITATION/Clients and shares.md",
     "EXPLOITATION/Untitled.canvas"
   ]
 }
