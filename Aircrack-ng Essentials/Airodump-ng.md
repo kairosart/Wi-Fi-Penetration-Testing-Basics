@@ -110,3 +110,33 @@ In the next section, we'll explore how to interpret these files visually, allowi
 
 ---
 
+## Questions
+
+1. What channel is the WiFi network "HackTheBox" operating on?
+	Answer: *11*
+
+```bash
+sudo airmon-ng start wlan0
+```
+
+
+![[airmon-ng-1.png]]
+
+```bash
+sudo airodump-ng wlan0mon
+```
+
+![[airodump-ng_channel.png]]
+
+2.  What is the ESSID of the WiFi network operating on the 5 GHz band?
+	Answer: *HackTheBox-5g*
+```bash
+sudo airodump-ng wlan0mon --band a
+```
+
+![[airodump-ng_EESID.png]]
+
+3. What is the ESSID of the WiFi network to which all the clients are currently connected?
+	Answer: *CyberNet-Secure*
+
+**Next step:** [[Airgraph-ng]]
