@@ -90,3 +90,40 @@ In the next section, we will take an in-depth look at the `airdecap-ng` tool. 
 
 We will explore how to use airdecap-ng to decrypt captured packets, discuss the various options available for decryption, and examine practical scenarios where decrypting network traffic can be beneficial for network security analysis.
 
+## Questions
+
+1. Set the channel to *11* and test for packet injection using aireplay-ng. On how many APs does it perform packet injection? (Answer in digit format: e.g., 3)
+
+	Answer: *2*
+
+- Enable monitor mode.
+
+```shell
+sudo airmon-ng start wlan0 1
+```
+
+![[airmon-ng_start-1.png]]
+
+- Use the `iw` command to set the channel 
+
+```shell
+sudo iw dev wlan0mon set channel 11
+```
+
+- Utilize Aireplay-ng's test mode.
+
+```shell
+sudo aireplay-ng --test wlan0mon
+```
+
+![[aireplay-ng_test-1.png]]
+
+2.  How many clients are connected to 'CyberNet-Secure'? (Answer in digit format: e.g., 3)
+	Answer: *4*
+
+```shell
+sudo airodump-ng wlan0mon
+```
+
+![[Cybernet-secure_clients.png]]
+

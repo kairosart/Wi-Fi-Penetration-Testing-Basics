@@ -23,67 +23,52 @@
             }
           },
           {
-            "id": "b970ba3d110f8b09",
+            "id": "e8030bc8e2c495a3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Aircrack-ng Essentials/Airmon-ng.md",
+                "file": "Aircrack-ng Essentials/Airdecap-ng.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Airmon-ng"
+              "title": "Airdecap-ng"
             }
           },
           {
-            "id": "7076139e1b6d8e47",
+            "id": "bffb451c4ea2a02e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Aircrack-ng Essentials/Airodump-ng.md",
+                "file": "Aircrack-ng Essentials/Aircrack-ng.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Airodump-ng"
+              "title": "Aircrack-ng"
             }
           },
           {
-            "id": "6f225454838c196f",
+            "id": "b267d3db68e6a999",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Aircrack-ng Essentials/Airgraph-ng.md",
+                "file": "Connection methods/Connecting to Wi-Fi Networks.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Airgraph-ng"
-            }
-          },
-          {
-            "id": "820b4336dcdc639e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Aircrack-ng Essentials/Aireplay-ng.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Aireplay-ng"
+              "title": "Connecting to Wi-Fi Networks"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -140,7 +125,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "7a605ebd7d88e884",
@@ -185,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Aircrack-ng Essentials/Aireplay-ng.md",
+                "file": "Connection methods/Connecting to Wi-Fi Networks.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Aireplay-ng"
+              "title": "Outline of Connecting to Wi-Fi Networks"
             }
           },
           {
@@ -377,29 +363,32 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "820b4336dcdc639e",
+  "active": "b267d3db68e6a999",
   "lastOpenFiles": [
-    "images/Clients_reconnected.png",
-    "images/Clients_connected.png",
-    "images/Deauthentication.png",
-    "images/aireplay-ng_test.png",
-    "images/aireplay-ng.png",
-    "Aircrack-ng Essentials/Airgraph-ng.md",
-    "Aircrack-ng Essentials/Aireplay-ng.md",
-    "images/HTB_CPG1.png",
-    "images/HTB_CAPR1.png",
+    "Connection methods/Connecting to Wi-Fi Networks.md",
+    "Connection methods",
+    "Aircrack-ng Essentials/Aircrack-ng.md",
+    "images/cracking_WPA1.png",
+    "images/cracking_WEP1.png",
+    "Aircrack-ng Essentials/Airdecap-ng.md",
+    "images/cracking_WPA.png",
+    "images/cracking_WEP.png",
+    "images/Aircrack-ng_Benchmark..png",
+    "images/Wireshark_3.jpeg",
     "Aircrack-ng Essentials/Airodump-ng.md",
-    "images/HTB_CPG.png",
-    "images/HTB_CAPR.png",
-    "images/airodump-ng_EESID.png",
-    "images/airodump-ng_channel.png",
+    "images/Decrypt_wpa.png",
+    "images/Decrypt_wep.png",
+    "images/Remove_wireless_headers.png",
+    "images/Wireshark_2.jpeg",
+    "Aircrack-ng Essentials/Aireplay-ng.md",
+    "Aircrack-ng Essentials/Airmon-ng.md",
+    "Aircrack-ng Essentials/Airgraph-ng.md",
     "Interfaces and Interface Modes/Wi-Fi Interfaces.md",
     "index.md",
     "Cheatsheet.md",
     "802.11 Fundamentals/Authentication Methods.md",
     "802.11 Fundamentals/802.11 Frames and TypesUntitled.md",
     "Aircrack-ng Essentials/Introduction to Aircrack-ng.md",
-    "Aircrack-ng Essentials/Airmon-ng.md",
     "images/rose-gold-glitter-frame-pink-festive_53876-111738",
     "home/emi/external/Obsidian/HTB/Wi-Fi Penetration Testing Basics/images/rose-gold-glitter-frame-pink-festive_53876-111738",
     "home/emi/external/Obsidian/HTB/Wi-Fi Penetration Testing Basics/images",
@@ -409,7 +398,6 @@
     "home/emi/external",
     "home/emi",
     "home",
-    "images/Wi_Fi_Penetration_Testing_Basics_Module_Cheat_Sheet.pdf",
     "Interfaces and Interface Modes/Interface Modes.md",
     "README.md",
     "INITIAL FOOTHOLD/Testing credentials.md",
@@ -423,8 +411,6 @@
     "EXPLOITATION/Git history analysis.md",
     "EXPLOITATION/evil-winrm (GMSA_CA_PROD$).md",
     "EXPLOITATION/Escalate user svc.md",
-    "EXPLOITATION/Docker Network Exploration.md",
-    "EXPLOITATION/Detect common misconfigurations on NFS servers.md",
     "EXPLOITATION/Untitled.canvas"
   ]
 }
