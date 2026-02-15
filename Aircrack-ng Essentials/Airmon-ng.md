@@ -5,7 +5,7 @@ Monitor mode is a specialized mode for wireless network interfaces, enabling the
 Airmon-ng can be used to enable monitor mode on wireless interfaces. It may also be used to kill network managers, or go back from monitor mode to managed mode. Entering the `airmon-ng` command without parameters will show the wireless interface name, driver and chipset.
 
 ```shell
-Kairos@htb[/htb]$ sudo airmon-ng
+sudo airmon-ng
 ```
 
 ![[airmon-ng.png]]
@@ -13,7 +13,7 @@ Kairos@htb[/htb]$ sudo airmon-ng
 We can set the wlan0 interface into monitor mode using the command `airmon-ng start wlan0`.
 
 ```shell
-Kairos@htb[/htb]$ sudo airmon-ng start wlan0
+sudo airmon-ng start wlan0
 ```
 
 ![[airmon-ng_start.png]]
@@ -21,7 +21,7 @@ Kairos@htb[/htb]$ sudo airmon-ng start wlan0
 We could test to see if our interface is in monitor mode with the iwconfig utility.
 
 ```shell
-Kairos@htb[/htb]$ iwconfig
+iwconfig
 ```
 
 ![[iwconfig1.png]]
@@ -33,7 +33,7 @@ From the above output, it can be observed that the interface has been successful
 When putting a card into monitor mode, it will automatically check for interfering processes. It can also be done manually by running the following command:
 
 ```shell
-Kairos@htb[/htb]$ sudo airmon-ng check
+sudo airmon-ng check
 ```
 
 ![[airmon-ng_check.png]]
@@ -43,7 +43,7 @@ As shown in the above output, there are 5 interfering processes that can cause i
 However, it is important to note that this step should only be taken if we are experiencing challenges during the pentesting process.
 
 ```shell
-Kairos@htb[/htb]$ sudo airmon-ng check kill
+sudo airmon-ng check kill
 ```
 
 ![[airmon-neg_kill.png]]
@@ -53,7 +53,7 @@ Kairos@htb[/htb]$ sudo airmon-ng check kill
 It is also possible to set the wireless card to a specific channel using `airmon-ng`. We can specify the desired channel while enabling monitor mode on the wlan0 interface.
 
 ```shell
-Kairos@htb[/htb]$ sudo airmon-ng start wlan0 11
+sudo airmon-ng start wlan0 11
 ```
 
 ![[airmon-ng_channel.png]]
@@ -65,7 +65,7 @@ The above command will set the card into monitor mode on channel 11. This ensure
 We can stop the monitor mode on the `wlan0mon` interface using the command `airmon-ng stop wlan0mon`.
 
 ```shell
-Kairos@htb[/htb]$ sudo airmon-ng stop wlan0mon
+sudo airmon-ng stop wlan0mon
 ```
 
 ![[airmon-ng_stop.png]]
@@ -74,7 +74,7 @@ Kairos@htb[/htb]$ sudo airmon-ng stop wlan0mon
 We could test to see if our interface is back to managed mode with the iwconfig utility.
 
 ```shell
-Kairos@htb[/htb]$ iwconfig
+iwconfig
 ```
 
 ![[airmon-ng1.png]]

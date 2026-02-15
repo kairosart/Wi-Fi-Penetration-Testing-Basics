@@ -25,7 +25,7 @@ It currently implements multiple different attacks:
 
 As we can see, the flag for deauthentication is `-0` or `--deauth`. For this module, we will focus on the `deauthentication` attack. This attack can be used to disconnect clients from the access point (AP). By using `aireplay-ng`, we can send `deauthentication` packets to the AP. The AP will mistakenly believe that these deauthentication requests are coming from the clients themselves, when in fact, we are the ones sending them.
 
-Testing for Packet Injection
+## Testing for Packet Injection
 
 Before sending deauthentication frames, it's important to verify if our wireless card can successfully inject frames into the target access point (AP). This can be tested by measuring the ping response times from the AP, which gives us an indication of the link quality based on the percentage of responses received. Furthermore, if we are using two wireless cards, this test can help identify which card is more effective for injection attacks.
 

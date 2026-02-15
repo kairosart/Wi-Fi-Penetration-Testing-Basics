@@ -19,7 +19,7 @@ Much of wi-fi penetration testing comes down to our physical positioning. As suc
 
  
 ```shell
-Kairos@htb[/htb]$ iwconfig
+iwconfig
 
 wlan0     IEEE 802.11  ESSID:off/any  
           Mode:Managed  Access Point: Not-Associated   Tx-Power=20 dBm   
@@ -31,7 +31,7 @@ By default, this is set to the country specified in our operating system. We can
 
 
 ```shell
-Kairos@htb[/htb]$ iw reg get
+iw reg get
 
 global
 country 00: DFS-UNSET
@@ -53,14 +53,14 @@ Suppose we lived in the United States, we might want to change our interfaces re
 
 
 ```shell
-Kairos@htb[/htb]$ sudo iw reg set US
+sudo iw reg set US
 ```
 
 
 Then, we could check this setting again with the iw reg get command.
 
 ```shell
-Kairos@htb[/htb]$ iw reg get
+iw reg get
 
 global
 country US: DFS-FCC
@@ -81,7 +81,7 @@ country US: DFS-FCC
 Afterwards, we can check the txpower of our interface with the `iwconfig` utility.
 
 ```shell
-Kairos@htb[/htb]$ iwconfig
+iwconfig
 
 wlan0     IEEE 802.11  ESSID:off/any  
           Mode:Managed  Access Point: Not-Associated   Tx-Power=20 dBm   
@@ -93,28 +93,28 @@ wlan0     IEEE 802.11  ESSID:off/any
 In many cases, our interface will automatically set its power to the maximum in our region. However, sometimes we might need to do this ourselves. First, we would have to bring our interface down.
 
 ```shell
-Kairos@htb[/htb]$ sudo ifconfig wlan0 down
+sudo ifconfig wlan0 down
 ```
 
 
 Then, we can set the desired txpower for our interface with the `iwconfig` utility.
 
 ```shell
-Kairos@htb[/htb]$ sudo iwconfig wlan0 txpower 30
+sudo iwconfig wlan0 txpower 30
 ```
 
 
 After that, we would need to bring our interface back up.
 
 ```shell
-Kairos@htb[/htb]$ sudo ifconfig wlan0 up
+sudo ifconfig wlan0 up
 ```
 
 
 Next, we can check the settings again by using the `iwconfig` utility.
 
 ```shell
-Kairos@htb[/htb]$ iwconfig
+iwconfig
 
 wlan0     IEEE 802.11  ESSID:off/any  
           Mode:Managed  Access Point: Not-Associated   Tx-Power=30 dBm   
@@ -134,7 +134,7 @@ The command that we can use to find out this information is the *iw list* comman
 
 
 ```shell
-Kairos@htb[/htb]$ iw list
+iw list
 
 Wiphy phy5
 	wiphy index: 5
@@ -209,7 +209,7 @@ As such, it can be very important for us to check on our interface's capabilitie
 To efficiently scan for available WiFi networks, we can use the `iwlist` command along with the specific interface name. Given the potentially extensive output of this command, it is beneficial to filter the results to show only the most relevant information. This can be achieved by piping the output through grep to include only lines containing `Cell`, `Quality`, `ESSID`, or `IEEE`.
 
 ```shell
-Kairos@htb[/htb]$ iwlist wlan0 scan |  grep 'Cell\|Quality\|ESSID\|IEEE'
+iwlist wlan0 scan |  grep 'Cell\|Quality\|ESSID\|IEEE'
 
           Cell 01 - Address: f0:28:c8:d9:9c:6e
                     Quality=61/70  Signal level=-49 dBm  
@@ -225,13 +225,13 @@ Kairos@htb[/htb]$ iwlist wlan0 scan |  grep 'Cell\|Quality\|ESSID\|IEEE'
                     IE: IEEE 802.11i/WPA2 Version 1
 ```
 
-From the refined output of the `iwlist` command, we can identify that there are three available WiFi networks. This filtered information focuses on the critical details such as the network cells, signal quality, ESSID, and IEEE specifications, making it straightforward to analyze the available networks.
+From the refined output of the `iwlist` command, we can identify that there are three available WiFi networks. This filtered information focuses on the critical details such as the *network cells, signal quality, ESSID, and IEEE specifications*, making it straightforward to analyze the available networks.
 ## Changing Channel & Frequency of Interface
 
 We can use the following command to see all available channels for the wireless interface:
 
 ```shell
-Kairos@htb[/htb]$ iwlist wlan0 channel
+iwlist wlan0 channel
 
 wlan0     32 channels in total; available frequencies :
           Channel 01 : 2.412 GHz
@@ -248,10 +248,10 @@ wlan0     32 channels in total; available frequencies :
 First, we need to disable the wireless interface which ensures that the interface is not in use and can be safely reconfigured. Then we can set the desired `channel` using the `iwconfig` command and finally, re-enable the wireless interface.
 
 ```shell
-Kairos@htb[/htb]$ sudo ifconfig wlan0 down
-Kairos@htb[/htb]$ sudo iwconfig wlan0 channel 64
-Kairos@htb[/htb]$ sudo ifconfig wlan0 up
-Kairos@htb[/htb]$ iwlist wlan0 channel
+sudo ifconfig wlan0 down
+sudo iwconfig wlan0 channel 64
+sudo ifconfig wlan0 up
+iwlist wlan0 channel
 
 wlan0     32 channels in total; available frequencies :
           Channel 01 : 2.412 GHz
@@ -272,7 +272,7 @@ As demonstrated in the above output, `Channel 64` operates at a frequency of 
 If we prefer to change the frequency directly rather than adjusting the channel, we have the option to do so as well.
 
 ```shell
-Kairos@htb[/htb]$ iwlist wlan0 frequency | grep Current
+iwlist wlan0 frequency | grep Current
 
           Current Frequency:5.32 GHz (Channel 64)
 ```
@@ -281,16 +281,16 @@ Kairos@htb[/htb]$ iwlist wlan0 frequency | grep Current
 To change the frequency, we first need to disable the wireless interface, which ensures that the interface is not in use and can be safely reconfigured. Then, we can set the desired frequency using the iwconfig command and finally, re-enable the wireless interface.
 
 ```shell
-Kairos@htb[/htb]$ sudo ifconfig wlan0 down
-Kairos@htb[/htb]$ sudo iwconfig wlan0 freq "5.52G"
-Kairos@htb[/htb]$ sudo ifconfig wlan0 up
+sudo ifconfig wlan0 down
+sudo iwconfig wlan0 freq "5.52G"
+sudo ifconfig wlan0 up
 ```
 
 
 We can now verify the current frequency, and this time, we can see that the frequency has been successfully changed to `5.52 GHz`. This change automatically adjusted the channel to the appropriate `channel 104`.
 
 ```shell
-Kairos@htb[/htb]$ iwlist wlan0 frequency | grep Current
+iwlist wlan0 frequency | grep Current
 
           Current Frequency:5.52 GHz (Channel 104)
 ```

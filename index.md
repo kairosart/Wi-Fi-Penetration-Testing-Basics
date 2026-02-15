@@ -35,6 +35,6 @@ Let's delve into a detailed discussion of these four crucial components.
 
 By systematically evaluating these aspects, pentesters can identify and mitigate security risks, strengthen defenses, and enhance the overall security posture of WiFi networks.
 
-**Next step:** [[802.11 Frames and TypesUntitled]]
+**Next step:** [[802.11 Frames and Types]]
 
 

@@ -24,6 +24,21 @@ Furthermore, airodump-ng generates multiple files containing comprehensive infor
 |`Notes`|Shows additional information about the client, such as captured EAPOL or PMKID.|
 |`PROBES`|Shows the list of networks the client is probing for.|
 
+## How to Read dBm Values
+
+WiFi signal strength is measured in **negative numbers**.
+
+The closer to **0**, the stronger the signal.
+
+|Power (dBm)|Signal Strength|Meaning|
+|---|---|---|
+|-30 dBm|Extremely strong|Very close to router|
+|-50 dBm|Strong|Excellent signal|
+|-60 dBm|Good|Stable connection|
+|-70 dBm|Fair|May slow down|
+|-80 dBm|Weak|Unstable|
+|-90 dBm|Very weak|Almost unusable|
+
 To utilize airodump-ng effectively, the first step is to activate `monitor mode` on the wireless interface. This mode allows the interface to capture all the wireless traffic in its vicinity. We can use `airmon-ng` to enable monitor mode on the interface, as shown in the previous section.
 
 ```shell

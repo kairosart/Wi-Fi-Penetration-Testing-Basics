@@ -9,21 +9,21 @@ Managed mode is when we want our interface to act as a client or a station. In o
 Pretty much in most cases, our interface will default to this mode, but suppose we want to set our interface to this mode. This could be helpful after setting our interface into monitor mode. We would run the following command.
 
 ```shell
-Kairos@htb[/htb]$ sudo ifconfig wlan0 down
-Kairos@htb[/htb]$ sudo iwconfig wlan0 mode managed
+sudo ifconfig wlan0 down
+sudo iwconfig wlan0 mode managed
 ```
 
 Then, to connect to a network, we could utilize the following command.
 
 
 ```shell
-Kairos@htb[/htb]$ sudo iwconfig wlan0 essid HTB-Wifi
+sudo iwconfig wlan0 essid HTB-Wifi
 ```
 
 Then, to check our interface, we can utilize the `iwconfig` utility.
 
 ```shell
-Kairos@htb[/htb]$ sudo iwconfig
+sudo iwconfig
 ```
 
 ![[iwconfig.png]]
@@ -35,14 +35,14 @@ Secondarily, we could act in a decentralized approach. This is where ad-hoc mode
 To set our interface into this mode, we would run the following commands.
 
 ```shell
-Kairos@htb[/htb]$ sudo iwconfig wlan0 mode ad-hoc
-Kairos@htb[/htb]$ sudo iwconfig wlan0 essid HTB-Mesh
+sudo iwconfig wlan0 mode ad-hoc
+sudo iwconfig wlan0 essid HTB-Mesh
 ```
 
 Then, once again, we could check our interface with the `iwconfig` command.
 
 ```shell
-Kairos@htb[/htb]$ sudo iwconfig
+sudo iwconfig
 ```
 
 ![[ad-hoc.png]]
@@ -52,7 +52,7 @@ Kairos@htb[/htb]$ sudo iwconfig
 On the flip side of managed mode is master mode (access point/router mode). However, we cannot simply set this with the `iwconfig` utility. Rather, we need what is referred to as a management daemon. This management daemon is responsible for responding to stations or clients connecting to our network. Commonly, in wi-fi penetration testing, we would utilize hostapd for this task. As such, we would first want to create a sample configuration.
 
 ```shell
-Kairos@htb[/htb]$ nano open.conf
+nano open.conf
 
 interface=wlan0
 driver=nl80211
@@ -64,7 +64,7 @@ hw_mode=g
 This configuration would simply bring up an open network with the name HTB-Hello-World. With this network configuration, we could bring it up with the following command.
 
 ```shell
-Kairos@htb[/htb]$ sudo hostapd open.conf
+sudo hostapd open.conf
 ```
 
 ![[hostapd.png]]
@@ -76,13 +76,13 @@ In the above example, hostapd brings our AP up, then we connect another device t
 Mesh mode is an interesting one in which we can set our interface to join a self-configuring and routing network. This mode is commonly used for business applications where there is a need for large coverage across a physical space. This mode turns our interface into a mesh point. We can provide additional configuration to make it functional, but generally speaking, we can see if it is possible by whether or not we are greeted with errors after running the following commands.
 
 ```shell
-Kairos@htb[/htb]$ sudo iw dev wlan0 set type mesh
+sudo iw dev wlan0 set type mesh
 ```
 
 Then we can check our interface once again with the `iwconfig` utility.
 
 ```shell
-Kairos@htb[/htb]$ sudo iwconfig
+sudo iwconfig
 ```
 
 ![[mesh.png]]
@@ -96,25 +96,25 @@ Enabling monitor mode typically requires *administrative privileges* and may var
 First we would need to bring our interface down to avoid a device or resource busy error.
 
 ```shell
-Kairos@htb[/htb]$ sudo ifconfig wlan0 down
+sudo ifconfig wlan0 down
 ```
 
 Then we could set our interface's mode with iw {interface name} set {mode}
 
 ```shell
-Kairos@htb[/htb]$ sudo iw wlan0 set monitor control
+sudo iw wlan0 set monitor control
 ```
 
 Then we can bring our interface back up.
 
 ```shell
-Kairos@htb[/htb]$ sudo ifconfig wlan0 up
+sudo ifconfig wlan0 up
 ```
 
 Finally, to ensure that our interface is in monitor mode, we can utilize the `iwconfig` utility.
 
 ```shell
-Kairos@htb[/htb]$ iwconfig
+iwconfig
 ```
 
 ![[monitor.png]]
