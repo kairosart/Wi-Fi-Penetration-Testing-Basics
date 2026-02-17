@@ -210,3 +210,4 @@ You can see you're on the 192.168.3.X network.
 curl http://192.168.3.1
 ```
 
+**Next lesson:** [[Finding Hideen SSIDs]]
