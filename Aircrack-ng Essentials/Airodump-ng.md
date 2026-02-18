@@ -72,6 +72,7 @@ sudo airodump-ng -c 11 wlan0mon
 ```
 
 ![[airodump-ng3.png]]
+
 It is also possible to select multiple channels for scanning using the command `airodump-ng -c 1,6,11 wlan0mon`.
 
 ---
@@ -144,7 +145,9 @@ sudo airodump-ng wlan0mon
 ![[airodump-ng_channel.png]]
 
 2.  What is the ESSID of the WiFi network operating on the 5 GHz band?
+
 	Answer: *HackTheBox-5g*
+	
 ```bash
 sudo airodump-ng wlan0mon --band a
 ```

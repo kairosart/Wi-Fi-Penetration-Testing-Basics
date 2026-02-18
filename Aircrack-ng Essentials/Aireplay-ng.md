@@ -127,3 +127,4 @@ sudo airodump-ng wlan0mon
 
 ![[Cybernet-secure_clients.png]]
 
+**Next lesson:**  [[Airdecap-ng]]
