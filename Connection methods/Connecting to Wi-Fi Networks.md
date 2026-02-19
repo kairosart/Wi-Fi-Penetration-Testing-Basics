@@ -72,7 +72,7 @@ network={
 }
 ```
 
-Then we could initiate our wpa connection to the AP using the following command.
+Then we could initiate your wpa connection to the AP using the following command.
 
 ```shell
 sudo wpa_supplicant -c wpa.conf -i wlan0

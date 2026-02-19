@@ -211,6 +211,9 @@ To efficiently scan for available WiFi networks, we can use the `iwlist` comma
 ```shell
 iwlist wlan0 scan |  grep 'Cell\|Quality\|ESSID\|IEEE'
 
+```
+
+```shell
           Cell 01 - Address: f0:28:c8:d9:9c:6e
                     Quality=61/70  Signal level=-49 dBm  
                     ESSID:"HTB-Wireless"
@@ -224,7 +227,6 @@ iwlist wlan0 scan |  grep 'Cell\|Quality\|ESSID\|IEEE'
                     ESSID:"HackTheBox"
                     IE: IEEE 802.11i/WPA2 Version 1
 ```
-
 From the refined output of the `iwlist` command, we can identify that there are three available WiFi networks. This filtered information focuses on the critical details such as the *network cells, signal quality, ESSID, and IEEE specifications*, making it straightforward to analyze the available networks.
 ## Changing Channel & Frequency of Interface
 
@@ -232,7 +234,9 @@ We can use the following command to see all available channels for the wireless 
 
 ```shell
 iwlist wlan0 channel
+```
 
+```shell
 wlan0     32 channels in total; available frequencies :
           Channel 01 : 2.412 GHz
           Channel 02 : 2.417 GHz
@@ -242,8 +246,8 @@ wlan0     32 channels in total; available frequencies :
           Channel 140 : 5.7 GHz
           Channel 149 : 5.745 GHz
           Channel 153 : 5.765 GHz
-```
 
+```
 
 First, we need to disable the wireless interface which ensures that the interface is not in use and can be safely reconfigured. Then we can set the desired `channel` using the `iwconfig` command and finally, re-enable the wireless interface.
 
@@ -252,7 +256,9 @@ sudo ifconfig wlan0 down
 sudo iwconfig wlan0 channel 64
 sudo ifconfig wlan0 up
 iwlist wlan0 channel
+```
 
+```shell
 wlan0     32 channels in total; available frequencies :
           Channel 01 : 2.412 GHz
           Channel 02 : 2.417 GHz
@@ -264,8 +270,6 @@ wlan0     32 channels in total; available frequencies :
           Channel 153 : 5.765 GHz
           Current Frequency:5.32 GHz (Channel 64)
 ```
-
-
 As demonstrated in the above output, `Channel 64` operates at a frequency of `5.32 GHz`. By following these steps, we can effectively change the channel of the wireless interface to optimize performance and reduce interference.
 
 
@@ -273,11 +277,11 @@ If we prefer to change the frequency directly rather than adjusting the channel,
 
 ```shell
 iwlist wlan0 frequency | grep Current
-
-          Current Frequency:5.32 GHz (Channel 64)
 ```
 
-
+```shell
+          Current Frequency:5.32 GHz (Channel 64)
+```
 To change the frequency, we first need to disable the wireless interface, which ensures that the interface is not in use and can be safely reconfigured. Then, we can set the desired frequency using the iwconfig command and finally, re-enable the wireless interface.
 
 ```shell
@@ -291,10 +295,11 @@ We can now verify the current frequency, and this time, we can see that the freq
 
 ```shell
 iwlist wlan0 frequency | grep Current
-
-          Current Frequency:5.52 GHz (Channel 104)
 ```
 
+```shell
+          Current Frequency:5.52 GHz (Channel 104)
+```
 ## Moving On
 
 In this section, we explored how to choose the right interface, change the region settings for our interface, set interface strength, check the drivers, and scan for available WiFi networks. With these foundational steps covered, we are now prepared to delve into the next topic.
