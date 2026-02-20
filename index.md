@@ -1,4 +1,6 @@
 
+## Wi-Fi Penetration Testing Basics
+
 ![[heading.png|540x183]]
 
 This module introduced essential concepts and techniques for Wi-Fi penetration testing. We explored key tasks such as changing interface modes, adjusting frequency and signal strength, and employing the aircrack-ng suite for common attacks, including revealing hidden SSIDs. Additionally, we discussed bypassing MAC filters, which is a vital tactic for circumventing basic security measures. By mastering these foundational skills, penetration testers can effectively assess and exploit vulnerabilities in wireless networks, setting the stage for more advanced attack techniques.
