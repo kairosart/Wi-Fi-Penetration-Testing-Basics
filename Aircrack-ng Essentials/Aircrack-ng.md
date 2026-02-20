@@ -60,3 +60,4 @@ Choose the *Coherer* ESSID.
 
 ![[cracking_WPA1.png]]
 
+**Next lesson:**  [[Connecting to Wi-Fi Networks]]

@@ -46,21 +46,15 @@
   "exportPath": "/home/emi/external/Obsidian/HTB/Fries/docs",
   "filesToExport": [
     [
-      "Enumeration.md",
-      "Foothold.md",
+      "802.11 Fundamentals",
+      "Aircrack-ng Essentials",
+      "Basic Control Bypass",
+      "Connection methods",
+      "Interfaces and Interface Modes",
+      "Introduction",
+      "Skils Assessment",
       "index.md",
-      "MSSQL Server.md",
-      "Privilege Escalation.md",
-      "README.md",
-      "Reverse shell.md",
-      "SMB.md",
-      "Tab 1.md",
-      "Tab 2.md",
-      "Tab 3.md",
-      "Tab 4.md",
-      "Tab 5.md",
-      "Tab 6.md",
-      "Tab 7.md"
+      "README.md"
     ]
   ]
 }

