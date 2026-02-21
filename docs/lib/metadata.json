@@ -1,0 +1,204 @@
+{
+  "vaultName": "Wi-Fi Penetration Testing Basics",
+  "lastExport": 1771667177430,
+  "pluginVersion": "1.8.01",
+  "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon",
+  "useCustomHeadContent": false,
+  "useCustomFavicon": false,
+  "files": [
+    "802.11 Fundamentals/802.11 Frames and Types.md",
+    "802.11 Fundamentals/Authentication Methods.md",
+    "Aircrack-ng Essentials/Aircrack-ng.md",
+    "Aircrack-ng Essentials/Airdecap-ng.md",
+    "Aircrack-ng Essentials/Aireplay-ng.md",
+    "Aircrack-ng Essentials/Airgraph-ng.md",
+    "Aircrack-ng Essentials/Airmon-ng.md",
+    "Aircrack-ng Essentials/Airodump-ng.md",
+    "Aircrack-ng Essentials/Introduction to Aircrack-ng.md",
+    "Basic Control Bypass/Bypassing MAC filtering.md",
+    "Basic Control Bypass/Finding Hideen SSIDs.md",
+    "Connection methods/Connecting to Wi-Fi Networks.md",
+    "Interfaces and Interface Modes/Interface Modes.md",
+    "Interfaces and Interface Modes/Wi-Fi Interfaces.md",
+    "Introduction/Overview.md",
+    "Skils Assessment/Scenario.md",
+    "index.md",
+    "README.md",
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/fonts/c504db5c06caaf7cdfba.woff2",
+    "lib/fonts/01dcbad1bac635f9c9cd.woff2",
+    "lib/media/6155340132a851f6089e.svg"
+  ],
+  "mainDependencies": [
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/fonts/c504db5c06caaf7cdfba.woff2",
+    "lib/fonts/01dcbad1bac635f9c9cd.woff2",
+    "lib/media/6155340132a851f6089e.svg"
+  ],
+  "fileInfo": {
+    "802.11 Fundamentals/802.11 Frames and Types.md": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 8730,
+      "exportedPath": "802.11 Fundamentals/802.11 Frames and Types.html",
+      "dependencies": []
+    },
+    "802.11 Fundamentals/Authentication Methods.md": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 5965,
+      "exportedPath": "802.11 Fundamentals/Authentication Methods.html",
+      "dependencies": []
+    },
+    "Aircrack-ng Essentials/Aircrack-ng.md": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 2912,
+      "exportedPath": "Aircrack-ng Essentials/Aircrack-ng.html",
+      "dependencies": []
+    },
+    "Aircrack-ng Essentials/Airdecap-ng.md": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 6094,
+      "exportedPath": "Aircrack-ng Essentials/Airdecap-ng.html",
+      "dependencies": []
+    },
+    "Aircrack-ng Essentials/Aireplay-ng.md": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 6268,
+      "exportedPath": "Aircrack-ng Essentials/Aireplay-ng.html",
+      "dependencies": []
+    },
+    "Aircrack-ng Essentials/Airgraph-ng.md": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 3677,
+      "exportedPath": "Aircrack-ng Essentials/Airgraph-ng.html",
+      "dependencies": []
+    },
+    "Aircrack-ng Essentials/Airmon-ng.md": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 4038,
+      "exportedPath": "Aircrack-ng Essentials/Airmon-ng.html",
+      "dependencies": []
+    },
+    "Aircrack-ng Essentials/Airodump-ng.md": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 7441,
+      "exportedPath": "Aircrack-ng Essentials/Airodump-ng.html",
+      "dependencies": []
+    },
+    "Aircrack-ng Essentials/Introduction to Aircrack-ng.md": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 2556,
+      "exportedPath": "Aircrack-ng Essentials/Introduction to Aircrack-ng.html",
+      "dependencies": []
+    },
+    "Basic Control Bypass/Bypassing MAC filtering.md": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 7957,
+      "exportedPath": "Basic Control Bypass/Bypassing MAC filtering.html",
+      "dependencies": []
+    },
+    "Basic Control Bypass/Finding Hideen SSIDs.md": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 7232,
+      "exportedPath": "Basic Control Bypass/Finding Hideen SSIDs.html",
+      "dependencies": []
+    },
+    "Connection methods/Connecting to Wi-Fi Networks.md": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 7928,
+      "exportedPath": "Connection methods/Connecting to Wi-Fi Networks.html",
+      "dependencies": []
+    },
+    "Interfaces and Interface Modes/Interface Modes.md": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 6411,
+      "exportedPath": "Interfaces and Interface Modes/Interface Modes.html",
+      "dependencies": []
+    },
+    "Interfaces and Interface Modes/Wi-Fi Interfaces.md": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 13908,
+      "exportedPath": "Interfaces and Interface Modes/Wi-Fi Interfaces.html",
+      "dependencies": []
+    },
+    "Introduction/Overview.md": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 4367,
+      "exportedPath": "Introduction/Overview.html",
+      "dependencies": []
+    },
+    "Skils Assessment/Scenario.md": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 3454,
+      "exportedPath": "Skils Assessment/Scenario.html",
+      "dependencies": []
+    },
+    "index.md": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 1182,
+      "exportedPath": "index.html",
+      "dependencies": []
+    },
+    "README.md": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 7759,
+      "exportedPath": "README.html",
+      "dependencies": []
+    },
+    "lib/fonts/70cc7ff27245e82ad414.ttf": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 192740,
+      "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/454577c22304619db035.ttf": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 161376,
+      "exportedPath": "lib/fonts/454577c22304619db035.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/52ac8f3034507f1d9e53.ttf": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 191568,
+      "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/05b618077343fbbd92b7.ttf": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 155288,
+      "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 7876,
+      "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/c504db5c06caaf7cdfba.woff2": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 352240,
+      "exportedPath": "lib/fonts/c504db5c06caaf7cdfba.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/01dcbad1bac635f9c9cd.woff2": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 387976,
+      "exportedPath": "lib/fonts/01dcbad1bac635f9c9cd.woff2",
+      "dependencies": []
+    },
+    "lib/media/6155340132a851f6089e.svg": {
+      "modifiedTime": 1771667177430,
+      "sourceSize": 315,
+      "exportedPath": "lib/media/6155340132a851f6089e.svg",
+      "dependencies": []
+    }
+  }
+}
